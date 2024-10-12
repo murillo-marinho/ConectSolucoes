@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Estilo básico */
+body {
+    
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #003b31;
+    color: white;
+    padding: 25px 0;
+}
+
+/* Top Bar */
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon img {
+    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: auto; /* Mantém a proporção */
+    cursor: pointer; /* Muda o cursor ao passar sobre o ícone */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+
+    position: relative; 
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; 
+    margin-right: 10px;
+}
+
+
+.logo a{
+    
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.search {
+    position: relative;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px 40px 8px 15px; /* Espaço extra à direita para o botão */
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.search button {
+    position: absolute;
+    right: 10px; /* Posiciona o botão à direita dentro do campo */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 25px; /* Ajuste o tamanho da lupa conforme necessário */
+    height: auto;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+}
+
+.user-area img {
+    height: 40px; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+.user-area a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+/* Separação visual da barra de menu */
+.departamento-menu { 
+    display: flex;
+    align-items: center; 
+    background-color: #ff8c00; 
+    padding: 10px;
+    
+}
+.departamento-menu .departamento-icon-verde{ 
+    display: none;
+}
+
+.departamento-menu img {
+    height: 30px; 
+    margin-right: 5px; 
+    margin-bottom: -9px;
+    transition: opacity 0.8s;
+}
+
+.search{
+    align-items: center;
+}
+.menu-bar {
+    align-items: center;
+    background-color: #ff6600;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+
+
+
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Transição para a cor */
+}
+
+.menu-bar ul li a:hover {
+    color: #003b31;
+}
+
+/* Efeito ao passar o mouse sobre o item de departamento */
+.departamento-menu:hover .departamento-icon-branco {
+    
+    transition: opacity 0.8s;
+    opacity: 0;
+    display: none; /* Esconde o ícone branco ao passar o mouse */
+}
+
+.departamento-menu:hover .departamento-icon-verde {
+    display: inline-flex; /* Mostra o ícone verde ao passar o mouse */
+    align-items: center;
+}
+
+.departamento-menu:hover a {
+    color: #003b31; /* Muda a cor do texto ao passar o mouse */
+}
+
+
+
+/* inicio antigo */
+
+.Logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+.ul li a{
+    color: white;
+}
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.main-text{
+    width: 50%;
+    color: white;
+}
+.main-text h1{
+    font-size: 2.5rem;
+}
+
+.main-text h2{
+    padding: 10px;
+    font-weight:lighter;
+    font-size: 30px;
+}
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.main-text div img{
+    width: 10%;
+}
+
+.main-img{
+    width: 50%;
+    
+}
+
+.main-img img{
+    width: 100%;
+    
+}
+
+/* Menu Icone */
+
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+.slider-hidden {
+    display: none;
+}
+
+/* Estilos de Resultados */
+
+.resultados{
+    background: white;
+    padding: 0 10%;
+    margin-top: 60px;
+    position: relative;
+}
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultados .resultados-text{
+    color: #ff7300;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 50%;
+    font-weight:bolder;
+}
+
+.resultados .resultados-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ff7300;
+
+}
+
+.resultados .resultados-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.resultados .resultados-numero p span{
+    font-size: 1.8rem;
+    
+    font-weight:bolder;
+
+}
+
+.resultados::after {
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 60px auto 0 ;  
+}
+/* Fim dos Estilos de Resultados */
+
+
+/* Estilos de Prestadores */
+.carrossel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 80%;
+    
+}
+
+.carrossel-item {
+    
+    transition: transform 0.5s ease;
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel-item:hover {
+    transform: scale(1.1);
+}
+
+.carrossel img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.seta { 
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem; /* Reduzindo um pouco o tamanho da seta */
+    background-color: #878f87;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.seta.esquerda {
+    left: 8%;
+}
+
+.seta.direita {
+    right: 8%;
+}
+
+.prestadores h3{
+    font-size: 29px;
+    color: #003b31;
+    padding: 30px;
+}
+
+.prestadores{
+    padding: 30px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.prestadores::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 60px auto 0 ; 
+    width: 82%;
+    
+}
+/* Fim dos Estilos de Prestadores */
+
+/* Estilos de Serviços */
+.services {
+    padding: 0px 20px;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.services h3 {
+    font-size: 29px;
+    color: #003b31;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    transition: transform 0.5s ease;
+}
+
+.service-item img {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.fornecedor-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;/
+}
+
+.fornecedor-link {
+    color: #ff6600; 
+    text-decoration: none;
+}
+
+.fornecedor-link:hover {
+    text-decoration: underline;
+}
+
+.service-info {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.service-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #003b31;
+}
+
+.service-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.service-price {
+    text-align: right;
+}
+
+.service-price .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.service-price .new-price {
+    font-size: 20px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.service-price button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-price button:hover {
+    background-color: #003b31;
+}
+.service-item:hover {
+    transform: scale(1.02);
+}
+
+/* Fim dos Estilos de Serviços */
+
+
+/* Estilo para o botão "Mostrar Mais" */
+.mostrar-mais-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.mostrar-mais-btn {
+    text-decoration: none;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.mostrar-mais-btn:hover {
+    background-color: #003b31;
+}
+/* Fim do Estilo para o botão "Mostrar Mais" */
+
+
+/* Inicio do footer */
+footer {
+    background-color: #003b31;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 10px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+}
+
+.footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 1001;
+}
+
+
+/* Estilo Responsivo */
+@media (max-width: 1080px) {
+    .departamento-menu a {
+        font-size: 14px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    .departamento-menu { 
+        justify-content: center;
+        background-color: #ff8c00; 
+        
+    }
+    
+    .outros-departamentos {
+        display: none;
+    }
+    
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0;
+        display: flex; 
+        align-items: center; 
+    }
+
+    .ul.ativo{
+        left: 0;
+    }
+
+    main .container{
+        flex-direction: column;
+        
+    }
+
+    main .container .main-img{
+        width: 100%;
+        margin-top: 60px;
+    }
+    main .container .main-text{
+        width: 100%;
+        text-align: center;
+    }
+    main .container .main-text h1{
+        font-size: 1.8rem;
+    }
+    main .container .main-text div{
+        justify-content: center;
+    }
+
+    .resultados .container{
+        flex-direction: column;
+
+    }
+    .resultados .resultados-text,
+    .resultados .resultados-numero{
+        width: 100%;
+        text-align: center;
+    }
+    .resultados-numero{
+        margin-top: 30px;
+        
+    }
+
+}
+
+@media (max-width: 800px){
+
+       .menu-bar{
+        padding: 0;
+    }
+    
+   
+    .resultados .resultados-numero p span{
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+    .resultados{
+        background: white;
+        padding: 0 10%;
+        margin-top: 60px;
+        position: relative;
+    }
+
+    main .container .main-text h1{
+        font-size: 3rem;
+    }
+    .service-list .service-item{
+        flex-direction: column;
+    }
+    .service-list .service-info ,
+    .service-list .service-price{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .logo, .search, .user-area {
+        display: flex;
+        align-items: center;
+        padding: 10px ;
+    }
+
+}
+
+@media (max-width: 660px){
+
+    .resultados .resultados-numero p{
+        padding: 1rem 0;
+    }
+    .resultados .resultados-numero{
+        flex-direction: column;
+    }
+    
+    .menu-bar ul li a{
+        display: none;
+    }
+    .user-area a{
+        display: none;
+
+    }
+}

@@ -1,0 +1,174 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links .login-trigger {
+    background: #ff6600;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .nav-links .login-trigger:hover {
+    background: #ff8533;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fundo escurecido */
+    backdrop-filter: blur(10px); /* Fundo desfocado */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    animation: scaleIn 0.5s ease forwards;
+  }
+  
+  .close-btn {
+    color: #ff6600;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #ff8533;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  
+  .tab-btn.active {
+    background-color: #333;
+  }
+  
+  .tab-btn:not(.active):hover {
+    background-color: #ff8533;
+  }
+  
+  /* Forms */
+  .form-container {
+    display: none;
+  }
+  
+  .form-container.active {
+    display: block;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:valid + label {
+    top: -20px;
+    font-size: 0.85rem;
+    color: #ff6600;
+  }
+  
+  .underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .input-box input:focus ~ .underline {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .login-btn:hover {
+    background: #ff8533;
+  }
+  
+  /* Animação de escala */
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

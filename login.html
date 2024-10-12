@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login e Cadastro</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <header>
+    <nav>
+ 
+      <ul class="nav-links">
+       
+        <li><button id="loginBtn" class="login-trigger">Login/Cadastro</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Modal de Login/Cadastro -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="tabs">
+        <button class="tab-btn active" id="loginTab">Login</button>
+        <button class="tab-btn" id="registerTab">Cadastro</button>
+      </div>
+
+      <div id="loginForm" class="form-container active">
+        <h2>Login</h2>
+        <form>
+          <div class="input-box">
+            <input type="text" required="required" id="username">
+            <label>Usuário</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input-box">
+            <input type="password" required="required" id="password">
+            <label>Senha</label>
+            <div class="underline"></div>
+          </div>
+          <button type="submit" class="login-btn">Entrar</button>
+        </form>
+      </div>
+
+      <div id="registerForm" class="form-container">
+        <h2>Cadastro</h2>
+        <form>
+          <div class="input-box">
+            <input type="text" required="required" id="register-username">
+            <label>Usuário</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input-box">
+            <input type="email" required="required" id="register-email">
+            <label>Email</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input-box">
+            <input type="password" required="required" id="register-password">
+            <label>Senha</label>
+            <div class="underline"></div>
+          </div>
+          <button type="submit" class="login-btn">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="js/login.js"></script>
+  
+</body>
+</html>
