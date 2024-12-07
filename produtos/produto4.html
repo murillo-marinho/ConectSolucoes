@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectSoluções</title>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                
+                <img src="../img/logo.png" alt="logoimg">
+                <a href="../index.html">ConectSoluções</a>
+                
+            </div>
+            <div class="user-area" id="loginBtn">
+                <img src="../img/login.png" alt="foto login">
+                <li id="loginLi"><button id="loginButton" class="login-trigger">Entre ou <br> Cadastre-se</button></li>
+            </div>
+            
+        </div>
+    </header>
+
+    <nav class="menu-bar">
+        <ul class="ul">
+            
+            <li class="departamento-menu">
+                <img src="../img/menu-branco.png" alt="Menu Icon" class="departamento-icon-branco" />
+                <img src="../img/menu-verde.png" alt="Menu Icon" class="departamento-icon-verde" />
+                <a href="../servicos.html">Departamentos</a>
+            </li>
+            <div class="outros-departamentos">
+            <li><a href="#">Manutenção</a></li>
+            <li><a href="#">Montagem</a></li>
+            <li><a href="#">Doméstico</a></li>
+            <li><a href="#">Jardinagem</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Elétrico</a></li>
+            
+        
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Busque aqui pelo seu serviço">
+            <button type="submit"><img src="../img/lupa_pesquisar.png" alt="Buscar"></button>
+        </div>
+        
+
+        <div class="menu-icon"> <img src="../img/menu.png" alt="icone de menu"> </div>
+    </nav>
+    <main>
+        <div class="caixa">
+            <div class="product-section">
+                <div class="product-image">
+                    <img src="https://enkad.com.br/wp-content/uploads/2023/01/software-para-empresa-de-pintura.webp" alt="imagem serviço">
+                </div>
+                <div class="product-info">
+                    <h1>Serviço de Pintura</h1>
+                    <div class="product-details">
+                        <p>Pintura profissional para ambientes internos e externos.</p>
+                        <p>Doméstica e Empresarial</p>
+                    </div>
+                    <div class="product-service-price-main">
+                        <p class="old-price-main">R$ 1000,00</p>
+                        <p class="new-price-main">R$ 950,00</p>
+                    
+                    </div>
+                   
+                    <button class="agendamento" onclick="openModal()">Realizar Agendamento</button>
+                </div>
+        </div>
+    </div>
+
+    <section class="products">
+        <h3>Você também pode gostar disso</h3>
+        <div class="product-service-list">
+            <!-- Serviço 1 -->
+            <div class="product-service-item">
+                <img src="../img/serviços-200x200/1.png" alt="Serviço de Limpeza">
+                <div class="product-service-info">
+                    <h4>Serviço de Limpeza</h4>
+                    <p>Limpeza completa para residências e escritórios.</p>
+                </div>
+                <div class="product-service-price">
+                    <p class="old-price">R$ 500,00</p>
+                    <p class="new-price">R$ 450,00</p>
+                    <button onclick="window.location.href='produto1.html'">Ver Detalhes</button>
+                </div>
+            </div>
+            <!-- Serviço 2 -->
+            <div class="product-service-item">
+                <img src="../img/serviços-200x200/2.png" alt="Serviço de Jardinagem">
+                <div class="product-service-info">
+                    <h4>Serviço de Jardinagem</h4>
+                    <p>Corte, poda e cuidado com jardins e gramados.</p>
+                </div>
+                <div class="product-service-price">
+                    <p class="old-price">R$ 650,00</p>
+                    <p class="new-price">R$ 570,00</p>
+                    <button onclick="window.location.href='produto3.html'">Ver Detalhes</button>
+                </div>
+            </div>
+            <!-- Serviço 3 -->
+            <div class="product-service-item">
+                <img src="../img/serviços-200x200/3.png" alt="Serviço de Pintura">
+                <div class="product-service-info">
+                    <h4>Serviço de Pintura</h4>
+                    <p>Pintura profissional para ambientes internos e externos.</p>
+                </div>
+                <div class="product-service-price">
+                    <p class="old-price">R$ 1.000,00</p>
+                    <p class="new-price">R$ 950,00</p>
+                    <button onclick="window.location.href='produto4.html'">Ver Detalhes</button>
+                </div>
+            </div>
+            <!-- Serviço 4 -->
+            <div class="product-service-item">
+                <img src="../img/serviços-200x200/4.png" alt="Serviço de Manutenção Elétrica">
+                <div class="product-service-info">
+                    <h4>Manutenção Elétrica</h4>
+                    <p>Instalações e reparos elétricos residenciais e comerciais.</p>
+                </div>
+                <div class="product-service-price">
+                    <p class="old-price">R$ 800,00</p>
+                    <p class="new-price">R$ 750,00</p>
+                    <button onclick="window.location.href='produto2.html'">Ver Detalhes</button>
+                </div>
+            </div>
+            <!-- Serviço 5 -->
+            <div class="product-service-item">
+                <img src="../img/serviços-200x200/5.png" alt="Serviço de Montagem de Móveis">
+                <div class="product-service-info">
+                    <h4>Montagem de Móveis</h4>
+                    <p>Montagem rápida e eficiente para qualquer tipo de móvel.</p>
+                </div>
+                <div class="product-service-price">
+                    <p class="old-price">R$ 250,00</p>
+                    <p class="new-price">R$ 200,00</p>
+                    <button onclick="window.location.href='produto5.html'">Ver Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                
+         </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 ConectSoluções LTDA. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <br><br>
+            <p>Entre em contato com o fornecedor através do:</p>
+            <br>
+            <a href="https://wa.me/557581718954" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="icon whatsapp">WhatsApp</a>
+            <br>
+            <br>
+            <p>ou ligue para o telefone:</p>
+            <br>
+            <p><img src="https://cdn-icons-png.flaticon.com/512/9995/9995648.png" alt="telefone icon">(75) 98171-8954</p>
+            <br>
+        </div>
+    </div>
+
+    <script src="../js/main.js" defer> </script>
+    <script src="../js/login.js" defer> </script>
+ 
+</body>
+</html>

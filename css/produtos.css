@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(241, 241, 241);
+}
+
+
+.product-section {
+    display: flex;
+    margin: 20px;
+    
+    justify-content: space-between;
+}
+
+.product-section .product-image img {
+    width: 800px;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.agendamento{
+    width: 200px;
+}
+.product-section .product-info {
+    max-width: 500px;
+}
+
+.product-section .product-info h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+
+
+.product-section .product-info button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-section .product-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin-right: 100px;
+    text-align: right;
+}
+.products h3{
+    font-size: 25px;
+    color: #003b31;
+    margin-left: 120px;
+    margin: 30px;
+}
+
+.products{
+    padding: 30px 20px;
+}
+
+.caixa{
+    background-color: white;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 15px; 
+}
+
+/* Estilos para Produtos/Serviços */
+.products-services {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Fundo suave */
+    text-align: center;
+}
+
+.products-services h3 {
+    font-size: 32px;
+    color: #003b31;
+    margin-bottom: 30px;
+}
+
+.product-service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Grade responsiva */
+    gap: 60px; /* Espaçamento entre os itens */
+    justify-items: center;
+}
+
+.product-service-item {
+    
+    width: 250px;
+    background-color: #fff; /* Fundo branco para os itens */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    overflow: hidden; /* Para esconder bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+    align-items: center;
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-service-item:hover {
+    transform: translateY(-5px); /* Eleva o item ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+}
+
+.product-service-item img {
+    width: 100%; /* Imagem ocupa toda a largura do item */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.product-service-info {
+    padding: 15px;
+    align-items: center;
+}
+
+.product-service-info h4 {
+    font-size: 18px;
+    color: #003b31; /* Cor do título */
+    margin: 10px 0;
+}
+
+.product-service-info p {
+    font-size: 14px;
+    color: #555; /* Cor da descrição */
+    margin-bottom: 15px;
+}
+
+.product-service-price {
+    padding: 15px;
+    border-top: 1px solid #e0e0e0; /* Linha separadora */
+    align-items: center;
+}
+
+.product-service-price p {
+    font-size: 18px;
+    color: #ff6600; /* Cor do preço */
+    font-weight: bold;
+    margin: 0;
+}
+
+.product-service-price button {
+    margin-top: 7px;
+    background-color: #ff6600; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação suave para o botão */
+}
+
+.product-service-price button:hover {
+    background-color: #e65c00; /* Cor do botão ao passar o mouse */
+}
+
+.product-service-price .old-price {
+    font-size: 14px;
+    color: #999; /* Cor mais clara para o preço antigo */
+    text-decoration: line-through; /* Traz a linha riscada */
+    margin: 0;
+}
+
+
+.product-service-price .new-price {
+    font-size: 18px;
+    color: #ff6600; /* Cor destacada para o preço novo */
+    font-weight: bold;
+    margin: 5px 0 0; /* Margem superior para espaçamento */
+}
+
+.product-service-price-main .old-price-main {
+    font-size: 20px;
+    color: #999; /* Cor mais clara para o preço antigo */
+    text-decoration: line-through; /* Traz a linha riscada */
+    margin: 0;
+}
+
+
+.product-service-price-main .new-price-main {
+    font-size: 30px;
+    color: #e60000; /* Cor destacada para o preço novo */
+    font-weight: bold;
+    margin: 5px 0 0; /* Margem superior para espaçamento */
+}
+
+.product-service-price button:hover {
+    background-color: #003b31;
+}
+
+.products{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px; 
+    margin: 50px;
+    
+}
+.product-service-list{
+
+    scale: 90%;
+}
+     /* Estilo do modal */
+     .modal {
+        display: none; /* Oculta o modal por padrão */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9990;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .close {
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+    /* Menu suspenso */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Exibir o menu ao passar o mouse */
+#loginLi:hover .dropdown-menu {
+    display: block;
+}
+.modal-content img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;}

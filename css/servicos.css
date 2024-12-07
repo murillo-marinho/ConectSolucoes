@@ -119,6 +119,8 @@ body {
 }
 
 .product-service-item {
+    cursor: pointer;
+    width: 230px;
     background-color: #fff; /* Fundo branco para os itens */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
@@ -133,7 +135,7 @@ body {
 
 .product-service-item img {
     width: 100%; /* Imagem ocupa toda a largura do item */
-    height: auto; /* Mantém a proporção da imagem */
+    height: 230px; /* Mantém a proporção da imagem */
 }
 
 .product-service-info {

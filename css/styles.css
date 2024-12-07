@@ -87,18 +87,26 @@ header {
     display: flex;
     align-items: center;
 }
+.user-area button{
+    all: unset;
+    background: none;
+    color: white;
+    
+}
 
 .user-area img {
     height: 40px; 
     margin-right: 10px;
     cursor: pointer;
 }
-.user-area a {
+li {
     color: white;
     text-decoration: none;
     font-size: 15px;
+    list-style: none;
     
 }
+
 
 /* Separação visual da barra de menu */
 .departamento-menu { 
@@ -178,8 +186,6 @@ header {
 .departamento-menu:hover a {
     color: #003b31; /* Muda a cor do texto ao passar o mouse */
 }
-
-
 
 /* inicio antigo */
 
@@ -335,7 +341,6 @@ main .container{
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
@@ -435,6 +440,7 @@ main .container{
     max-width: 1200px;
     transition: transform 0.5s ease;
 }
+
 
 .service-item img {
     width: 200px;
@@ -592,7 +598,40 @@ footer {
     position: relative;
     z-index: 1001;
 }
+a{
+    text-decoration: none;
+}
 
+/* Estilo do menu suspenso */
+.dropdown-menu {
+    background-color: #fff; /* Cor de fundo branca */
+    border: 1px solid #ccc; /* Borda fina e cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px; /* Espaçamento interno */
+    z-index: 1000; /* Certifica-se de que fique sobreposto */
+    display: none; /* Inicialmente oculto */
+    width: 150px; /* Largura do menu */
+  }
+  
+  /* Estilo do botão dentro do menu */
+  .dropdown-menu button {
+    width: 100%; /* Botão ocupa toda a largura do menu */
+    padding: 8px 12px; /* Espaçamento interno */
+    background-color: #f5f5f5; /* Cor de fundo do botão */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s; /* Transição suave para hover */
+  }
+  
+  /* Estilo de hover no botão */
+  .dropdown-menu button:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+  }
+  
 
 /* Estilo Responsivo */
 @media (max-width: 1080px) {

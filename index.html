@@ -18,10 +18,17 @@
                 <a href="index.html">ConectSoluções</a>
                 
             </div>
-            <div class="user-area" class="login-trigger"  id="loginBtn">
+            <div class="user-area" id="loginBtn">
                 <img src="img/login.png" alt="foto login">
-                <a href="#">Entre ou<br>cadastre-se</a>
+                <li id="loginLi">
+                    <button id="loginButton" class="login-trigger">Entre ou <br> Cadastre-se</button>
+                </li>
+                <ul class="dropdown-menu" id="userMenu">
+                
+                    <li><button id="logoutBtn">Sair</button></li>
+                </ul>
             </div>
+            
         </div>
     </header>
 
@@ -150,36 +157,7 @@
                 <img src="img\Prestadores-Icon\prestador10.png" alt="Prestador 6">
             </div>
             
-            <div class="carrossel-item">
-                <img src="img/logo1.png" alt="Prestador 1">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo2.png" alt="Prestador 2">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo3.png" alt="Prestador 3">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo4.png" alt="Prestador 4">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo5.png" alt="Prestador 5">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo6.png" alt="Prestador 6">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo6.png" alt="Prestador 6">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo6.png" alt="Prestador 6">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo6.png" alt="Prestador 6">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/logo6.png" alt="Prestador 6">
-            </div>
+        
         </div>
         
         
@@ -193,26 +171,33 @@
  <section class="services">
     <h3>Principais Serviços</h3>
 
-
+   
         <!-- produto 1 -->
         <div class="service-list">
-            <div class="service-item">
-                <img src="img\serviços\limpeza.png" alt="Serviço">
-                <div class="service-info">
-                    <h4>Serviço de Limpeza</h4>
-                    <p class="fornecedor-text">Fornecido por<a href="#" class="fornecedor-link"> MML Serviços</a></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-                <div class="service-price">
-                    <p class="old-price">R$ 560,00</p>
-                    <p class="new-price">R$ 400,00</p>
-                    <button>Realizar agendamento</button>
-                </div>
-            </div>
-        <!-- fim do produto 1 -->
+            <a href="produtos/produto1.html">
+                
+                <div class="service-item">
+                    <img src="img\serviços\limpeza.png" alt="Serviço">
+                    <div class="service-info">
+                        <h4>Serviço de Limpeza</h4>
+                        <p class="fornecedor-text">Fornecido por<a href="produtos/produto1.html" class="fornecedor-link"> MML Serviços</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="service-price">
+                        <p class="old-price">R$ 150,00</p>
+                        <p class="new-price">R$ 100,00</p>
+                        <button onclick="window.location.href='produtos/produto1.html'">Ver Detalhes</button>
 
+                    </div>
+            </div>
+             </a>
+        <!-- fim do produto 1 -->
+             
         <!-- produto 2 -->
+    
+
         <div class="service-list">
+            <a href="produtos/produto2.html">
             <div class="service-item">
                 <img src="img\serviços\eletricista.png" alt="Serviço">
                 <div class="service-info">
@@ -223,14 +208,18 @@
                 <div class="service-price">
                     <p class="old-price">R$ 800,00</p>
                     <p class="new-price">R$ 750,00</p>
-                    <button>Realizar agendamento</button>
+                    <button onclick="window.location.href='produtos/produto2.html'">Ver Detalhes</button>
                 </div>
             </div>
         </div>
+        </a>
         <!-- fim do produto 2 -->
 
         <!-- produto 3 -->
+       
+
         <div class="service-list">
+            <a href="produtos/produto2.html">
             <div class="service-item">
                 <img src="img\serviços\jardinagem.png" alt="Serviço">
                 <div class="service-info">
@@ -241,28 +230,32 @@
                 <div class="service-price">
                     <p class="old-price">R$ 650,00</p>
                     <p class="new-price">R$ 570,00</p>
-                    <button>Realizar agendamento</button>
+                    <button onclick="window.location.href='produtos/produto3.html'">Ver Detalhes</button>
                 </div>
             </div>
         </div>
+        </a>
         <!-- fim do produto 3 -->
 
         <!-- produto 4 -->
+        
         <div class="service-list">
+            <a href="produtos/produto4.html">
             <div class="service-item">
-                <img src="img\serviços\serviçoti.png" alt="Serviço">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdkQDcZ5Bsr5tpY9g1CrkFq3WOScJqh0-zP2RfMUECTOFtWk_aEp_b3XWDY87OlX1TzkToscnTT7sXAGcLLaXzKsQlfLvDbfmHiNJJzzoE0Sxd2yTMo_NLtPdiPB1ZG8bm2Sr6LsGm2vT3/w680/servico-de-pintura.jpg" alt="Serviço">
                 <div class="service-info">
-                    <h4>Serviço de Manutenção em Computadores</h4>
+                    <h4>Serviço de Pintura</h4>
                     <p class="fornecedor-text">Fornecido por<a href="#" class="fornecedor-link"> MML Serviços</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
                 <div class="service-price">
-                    <p class="old-price">R$ 250,00</p>
-                    <p class="new-price">R$ 200,00</p>
-                    <button>Realizar agendamento</button>
+                    <p class="old-price">R$ 1000,00</p>
+                    <p class="new-price">R$ 950,00</p>
+                    <button onclick="window.location.href='produtos/produto4.html'">Ver Detalhes</button>
                 </div>
             </div>
         </div>
+        </a>
         <!-- fim do produto 4 -->
 
         <div class="mostrar-mais-container">
@@ -340,8 +333,8 @@
     </div>
 </footer>
 
-   <script src="js/main.js"> </script>
-   <script src="js/login.js"> </script>
+   <script src="js/main.js" defer> </script>
+   <script src="js/login.js" defer> </script>
 
 
 </body>

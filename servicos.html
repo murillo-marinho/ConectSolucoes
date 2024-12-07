@@ -19,9 +19,9 @@
                 <a href="index.html">ConectSoluções</a>
                 
             </div>
-            <div class="user-area" class="login-trigger"  id="loginBtn">
+            <div class="user-area" id="loginBtn">
                 <img src="img/login.png" alt="foto login">
-                <a href="#">Entre ou<br>cadastre-se</a>
+                <li id="loginLi"><button id="loginButton" class="login-trigger">Entre ou <br> Cadastre-se</button></li>
             </div>
         </div>
     </header>
@@ -33,66 +33,30 @@
     
             <div class="carrossel" id="carrossel">
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento1.png" alt="Departamento 1">
+                    <img src="img/DEPARTAMENTO/12.png" alt="Departamento 1">
                 </div>
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento2.png" alt="Departamento 2">
+                    <img src="img/DEPARTAMENTO/13.png" alt="Departamento 2">
                 </div>
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento3.png" alt="Departamento 3">
+                    <img src="img/DEPARTAMENTO/14.png" alt="Departamento 3">
                 </div>
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento4.png" alt="Departamento 4">
+                    <img src="img/DEPARTAMENTO/15.png" alt="Departamento 4">
                 </div>
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento5.png" alt="Departamento 5">
+                    <img src="img/DEPARTAMENTO/16.png" alt="Departamento 5">
                 </div>
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento6.png" alt="Departamento 6">
+                    <img src="img/DEPARTAMENTO/17.png" alt="Departamento 6">
                 </div>
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento7.png" alt="Departamento 7">
+                    <img src="img/DEPARTAMENTO/18.png" alt="Departamento 7">
                 </div>
                 <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento8.png" alt="Departamento 8">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento9.png" alt="Departamento 9">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img\Departamentos-Icon\departamento10.png" alt="Departamento 10">
+                    <img src="img/DEPARTAMENTO/19.png" alt="Departamento 8">
                 </div>
                 
-                <div class="carrossel-item">
-                    <img src="img/logo1.png" alt="Departamento 1">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo2.png" alt="Departamento 2">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo3.png" alt="Departamento 3">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo4.png" alt="Departamento 4">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo5.png" alt="Departamento 5">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo6.png" alt="Departamento 6">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo7.png" alt="Departamento 7">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo8.png" alt="Departamento 8">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo9.png" alt="Departamento 9">
-                </div>
-                <div class="carrossel-item">
-                    <img src="img/logo10.png" alt="Departamento 10">
-                </div>
             </div>
             
             <button class="seta esquerda" onclick="scrollEsquerda()">&#8249;</button>
@@ -120,194 +84,215 @@
     
             <h3>Nossos Produtos/Serviços</h3>
             <h5>15 itens encontrados</h4>
-            <div class="product-service-list">
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 1">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 1</h4>
-                        <p>Descrição breve do produto/serviço.</p>
+                <div class="product-service-list" >
+                    <div class="product-service-item" onclick="window.location.href='produtos/produto1.html'">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtjHWP_pe7D87-YiiAI9RCSdVYGZ9o4WiBA&s" alt="Produto/Serviço 1">
+                        <div class="product-service-info">
+                            <h4>Serviço de Limpeza</h4>
+                            <p>Limpeza completa para residências e escritórios.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 150,00</p>
+                            <p class="new-price">R$ 100,00</p>
+                            <button onclick="window.location.href='produtos/produto1.html'">Ver Detalhes</button>
+                        </div>
                     </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
+                    <div class="product-service-item" onclick="window.location.href='produtos/produto2.html'">
+                        <img src="https://blog.ipog.edu.br/wp-content/uploads/2017/04/shutterstock_354518039-600x400.jpg" alt="Produto/Serviço 2">
+                        <div class="product-service-info">
+                            <h4>Manutenção Elétrica</h4>
+                            <p>Instalações e reparos elétricos residenciais e comerciais.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button onclick="window.location.href='produtos/produto2.html'">Ver Detalhes</button>
+                        </div>
                     </div>
+                    <div class="product-service-item" onclick="window.location.href='produtos/produto3.html'">
+                        <img src="https://amb-limp.com.br/wp-content/uploads/2019/07/Gardening-services-listed-in-EyeSpy.biz-online-business-directory-1.jpg" alt="Produto/Serviço 3">
+                        <div class="product-service-info">
+                            <h4>Serviço de Jardinagem</h4>
+                            <p>Corte, poda e cuidado com jardins e gramados.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 650,00</p>
+                            <p class="new-price">R$ 570,00</p>
+                            <button onclick="window.location.href='produtos/produto3.html'">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item" onclick="window.location.href='produtos/produto4.html'">
+                        <img src="https://construfacilsp.com.br/images/servicos/pinturas/pintura-em-geral.png" alt="Produto/Serviço 4">
+                        <div class="product-service-info">
+                            <h4>Serviço de Pintura</h4>
+                            <p>Pintura profissional para ambientes internos e externos.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 1000,00</p>
+                            <p class="new-price">R$ 950,00</p>
+
+                            <button onclick="window.location.href='produtos/produto4.html'">Ver Detalhes</button>                        </div>
+                    </div>
+                    <div class="product-service-item" onclick="window.location.href='produtos/produto5.html'">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1TbA0JvWZKynPcCczheXeLBf8wV2opaQy8Q&s" alt="Produto/Serviço 5">
+                        <div class="product-service-info">
+                            <h4>Montagem de Móveis</h4>
+                            <p>Montagem rápida e eficiente para qualquer tipo de móvel.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 250,00</p>
+                            <p class="new-price">R$ 200,00</p>
+                            <button onclick="window.location.href='produtos/produto5.html'">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 6">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 6</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 7">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 7</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 8">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 8</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 9">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 9</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 10">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 10</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 11">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 11</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 12">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 12</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 13">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 13</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 14">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 14</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    <div class="product-service-item">
+                        <img src="https://via.placeholder.com/200" alt="Produto/Serviço 15">
+                        <div class="product-service-info">
+                            <h4>Produto/Serviço 15</h4>
+                            <p>Descrição breve do produto/serviço.</p>
+                        </div>
+                        <div class="product-service-price">
+                            <p class="old-price">R$ 800,00</p>
+                            <p class="new-price">R$ 750,00</p>
+                            <button>Realizar agendamento</button>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 2">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 2</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 3">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 3</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 4">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 4</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 5">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 5</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 6">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 6</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 7">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 7</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 8">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 8</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 9">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 9</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 10">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 10</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 11">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 11</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 12">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 12</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 13">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 13</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 14">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 14</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                <div class="product-service-item">
-                    <img src="https://via.placeholder.com/200" alt="Produto/Serviço 15">
-                    <div class="product-service-info">
-                        <h4>Produto/Serviço 15</h4>
-                        <p>Descrição breve do produto/serviço.</p>
-                    </div>
-                    <div class="product-service-price">
-                        <p class="old-price">R$ 800,00</p>
-                        <p class="new-price">R$ 750,00</p>
-                        <button>Realizar agendamento</button>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
+
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 ConectSoluções LTDA. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
     
-    <script src="js/main.js"> </script>
-    <script src="js/login.js"> </script>
+    <script src="js/main.js" defer> </script>
+    <script src="js/login.js" defer> </script>
  
  
  </body>
